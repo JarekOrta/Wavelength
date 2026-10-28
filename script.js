@@ -1,7 +1,7 @@
 // Wavelength front-end demo. Works on GitHub Pages without a build step.
 // IMPORTANT: Paste your deployed Google Apps Script WEB APP URL below to
 // connect signups to your existing Google Sheet. Do not put API keys here.
-const GOOGLE_SHEETS_WEB_APP_URL = "";
+const GOOGLE_SHEETS_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzTpUyhTRzzCV1FaJWwSQRx02bxc7GlpCwDTs4cW5InYHVtxND8ndDJsLgHBNqpq-hY/exec";
 
 const views = document.querySelectorAll('.phone-view');
 const ratingDots = document.querySelectorAll('.rating-dot');
