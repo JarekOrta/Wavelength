@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4efe5" />
+    <meta name="description" content="Wavelength is a social music diary. Save the songs that find you and share them with people who get your taste. Join the beta." />
+    <meta property="og:title" content="Wavelength — Never lose a music discovery." />
+    <meta property="og:description" content="A social music diary for the songs worth remembering." />
+    <title>Wavelength — Never lose a music discovery.</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header page-gutter" id="top">
+        <a class="wordmark" href="#top" aria-label="Wavelength home">Wavelength</a>
+        <a class="header-link" href="#beta">Join the Beta</a>
+      </header>
+
+      <main>
+        <section class="hero page-gutter" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow">A SOCIAL MUSIC DIARY</p>
+            <h1 id="hero-title">Never lose a<br class="desktop-break" /> music discovery.</h1>
+            <p class="hero-description">Save the songs that find you—through friends, concerts, playlists, TikTok, and late-night scrolls—and share them with people who get your taste.</p>
+            <a class="pill-button hero-button" href="#beta">Join the Beta</a>
+            <p class="hero-note">Daily Wave — one song a day, worth remembering.</p>
+          </div>
+
+          <div class="phone-area">
+            <div class="phone" aria-label="Interactive Wavelength app preview">
+              <div class="dynamic-island" aria-hidden="true"></div>
+              <div class="phone-screen" aria-live="polite">
+                <div class="phone-view is-active" data-view="discover">
+                  <p class="phone-brand">Wavelength</p>
+                  <p class="phone-label">DAILY WAVE</p>
+                  <img class="album-art" src="./assets/wavelength-album.png" alt="Wavelength yellow-and-black Daily Wave cover art" />
+                  <h2 class="song-title">Soft Landing</h2>
+                  <p class="song-artist">The Evening Hours</p>
+                  <button class="pill-button phone-action" type="button" data-action="rate">Rate this listen</button>
+                  <button class="try-it" type="button" data-action="rate">try it out!</button>
+                </div>
+
+                <div class="phone-view" data-view="rating" hidden>
+                  <button class="phone-back" type="button" data-action="back" aria-label="Back to song">← <span>Back</span></button>
+                  <p class="phone-brand phone-brand-sm">Wavelength</p>
+                  <p class="phone-label">YOUR DAILY WAVE</p>
+                  <img class="album-art album-art-small" src="./assets/wavelength-album.png" alt="Wavelength Daily Wave cover" />
+                  <h2 class="song-title rating-song">Soft Landing</h2>
+                  <p class="song-artist">The Evening Hours</p>
+                  <p class="rating-question">How did this one hit?</p>
+                  <div class="rating-dots" role="group" aria-label="Rate this song from 1 to 5">
+                    <button type="button" class="rating-dot" data-rating="1" aria-label="1 out of 5" aria-pressed="false">1</button>
+                    <button type="button" class="rating-dot" data-rating="2" aria-label="2 out of 5" aria-pressed="false">2</button>
+                    <button type="button" class="rating-dot" data-rating="3" aria-label="3 out of 5" aria-pressed="false">3</button>
+                    <button type="button" class="rating-dot" data-rating="4" aria-label="4 out of 5" aria-pressed="false">4</button>
+                    <button type="button" class="rating-dot" data-rating="5" aria-label="5 out of 5" aria-pressed="false">5</button>
+                  </div>
+                  <p class="rating-help" id="rating-help">Tap a number to rate this song</p>
+                  <button class="pill-button phone-action save-button" type="button" data-action="save" disabled>Save to diary</button>
+                </div>
+
+                <div class="phone-view" data-view="saved" hidden>
+                  <p class="phone-brand">Wavelength</p>
+                  <p class="phone-label">MUSIC, REMEMBERED.</p>
+                  <div class="saved-symbol" aria-hidden="true">✓</div>
+                  <h2 class="saved-title">Saved to your<br />music diary.</h2>
+                  <p class="saved-copy">Soft Landing is yours to remember. See you for the next Daily Wave.</p>
+                  <button class="pill-button phone-action" type="button" data-action="restart">Try another listen</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="features page-gutter" aria-labelledby="features-title">
+          <div class="features-inner">
+            <h2 id="features-title">Music, remembered.</h2>
+            <p class="features-description">Songs get lost between concerts, group chats, and endless playlists. Wavelength gives them a place to stay.</p>
+            <div class="feature-list" aria-label="Wavelength features">
+              <span class="feature-item"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2" /><path d="M8 17h8M8 7h8" /></svg> Save discoveries</span>
+              <span class="feature-item"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20v-2a6 6 0 0 1 12 0v2M17 11a3 3 0 1 0-1-6M17 15a5 5 0 0 1 4 5"/></svg> Share your taste</span>
+              <span class="feature-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7v10M8 5v14M12 9v6M16 6v12M20 8v8" /></svg> Find trusted recommendations</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="beta-section page-gutter" id="beta" aria-labelledby="beta-title">
+          <div class="beta-copy">
+            <h2 id="beta-title">Be first on Wavelength.</h2>
+            <p>Join the beta for a more personal way to remember and share music.</p>
+          </div>
+          <form class="beta-form" id="beta-form" novalidate>
+            <label for="first-name">First name</label>
+            <input id="first-name" name="name" type="text" placeholder="Your first name" autocomplete="given-name" maxlength="80" required />
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" maxlength="254" required />
+            <button class="pill-button signup-button" type="submit">Get Early Access</button>
+            <p class="form-footnote" id="form-message" role="status" aria-live="polite">No spam. Just early access and updates.</p>
+          </form>
+        </section>
+      </main>
+
+      <footer class="site-footer page-gutter">
+        <a class="wordmark footer-brand" href="#top">Wavelength</a>
+        <p>Made for people who listen closely.</p>
+      </footer>
+    </div>
+  </body>
+</html>
